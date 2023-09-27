@@ -3,6 +3,10 @@
 ## Project Setup
 
 ```sh
+cd rick-and-morty-characters
+```
+
+```sh
 npm install
 ```
 
