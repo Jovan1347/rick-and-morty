@@ -24,6 +24,7 @@ export default {
 </script>
 <style lang="scss">
 .planets-page-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,8 +35,8 @@ export default {
 .avatar {
   position: absolute;
   width: 200px;
-  top: 300px;
-  left: 850px;
+  top: 30%;
+  left: 40%;
 
   img {
     width: 100%;
