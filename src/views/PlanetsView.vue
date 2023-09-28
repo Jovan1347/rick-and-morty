@@ -1,6 +1,6 @@
 <template>
   <header class="planets-page-header">
-    <app-header></app-header>
+    <AppHeader />
   </header>
   <div class="planets-page-wrapper">
     <h1>{{ text }}</h1>

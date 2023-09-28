@@ -1,6 +1,6 @@
 <template>
-  <div @click="backToTop()" class="back-to-wrapper">
-    <img src="../assets/images/arrows.png" alt="" />
+  <div @click="backToTop" class="back-to-wrapper">
+    <img src="../assets/images/arrows.png" alt="back to top" />
   </div>
 </template>
 

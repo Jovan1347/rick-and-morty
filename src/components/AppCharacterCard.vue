@@ -7,10 +7,10 @@
         </div>
       </div>
       <div class="card-text">
-        <div class="card-text-name">{{ character.name }}</div>
-        <div class="card-text-status">{{ character.status }}</div>
-        <div class="card-text-creation-time">{{ character.created }}</div>
-        <div class="card-text-location">{{ character.location.name }}</div>
+        <div class="card-text-name">Name: {{ character.name }}</div>
+        <div class="card-text-status">Status: {{ character.status }}</div>
+        <div class="card-text-creation-time">Created: {{ formatDate(character.created) }}</div>
+        <div class="card-text-location">Location: {{ character.location.name }}</div>
       </div>
     </div>
   </div>
@@ -39,7 +39,6 @@ export default {
         .then((response) => {
           this.characters = [...this.characters, ...response.data.results]
           this.page++
-          console.log(this.characters)
         })
         .catch((error) => {
           console.error('Error fetching data:', error)
@@ -53,6 +52,11 @@ export default {
       if (bottomOfPage) {
         this.fetchCharacters()
       }
+    },
+
+    formatDate(dateTimeString) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(dateTimeString).toLocaleDateString(undefined, options)
     }
   },
 

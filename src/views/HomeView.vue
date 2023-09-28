@@ -1,6 +1,6 @@
 <template>
   <header class="home-page-header">
-    <app-header></app-header>
+    <AppHeader />
   </header>
 
   <div class="home-page-wrapper">
@@ -11,8 +11,8 @@
     </section>
 
     <section class="home-page-characters-section">
-      <app-character-card></app-character-card>
-      <app-back-to-top class="home-page-wrapper-back-to-top"></app-back-to-top>
+      <AppCharacterCard />
+      <AppBackToTop class="home-page-wrapper-back-to-top" />
     </section>
   </div>
 </template>

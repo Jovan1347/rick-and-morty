@@ -2,7 +2,7 @@
   <div class="header-wrapper">
     <div class="header-content">
       <div class="header-content-logo">
-        <img src="../assets/images/rick-and-morty-logo.png" alt="" />
+        <img src="../assets/images/rick-and-morty-logo.png" alt="rick and morty logo" />
       </div>
       <div class="header-content-nav">
         <router-link to="/" class="header-content-nav-item">Characters</router-link>
@@ -13,9 +13,7 @@
 </template>
 
 <script>
-import { RouterLink } from 'vue-router'
-
-export default { components: { RouterLink } }
+export default {}
 </script>
 
 <style lang="scss">
